@@ -1,0 +1,204 @@
+.advantages {
+    margin-top: 80px;
+    color: #eeeeee;
+}
+.advantages_item {
+    background: rgba(0,0,0,0.5);
+    border-radius: 8px 0 0 8px;
+    width: 240px;
+    float: left;
+    margin: 0;
+    padding-top: 16px;
+    text-align: center;
+}
+.advantages_item h4 {
+    font-size: 18px;
+    margin-bottom: 64px;
+}
+.advantages_item img {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /*transition-timing-function: ease;*/
+    /*transition-delay: 5s;*/
+    /*-webkit-transition: width 2s, height 2s, -webkit-transform 2s; !* Safari *!*/
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(368deg); }
+    18% { transform: rotate(359deg); }
+    100% { transform: translate(0, 0); }
+}
+.advantages_item img:hover {
+    /*-webkit-transform: rotate(360deg); !* Safari *!*/
+    transition: 0.4s;
+    transform: rotate(360deg);
+}
+.advantages_item:nth-child(2) {
+    border-radius: 0;
+}
+.advantages_item:nth-child(3) {
+    border-radius: 0;
+}
+.advantages_item:last-child {
+    border-radius: 0 8px 8px 0;
+}
+.button {
+    background: #558B2F;
+    color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 8px 11px 4px rgba(0,0,0,0.3);
+    display: block;
+    width: 240px;
+    padding: 20px 0 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+    transition: 0.6s;
+}
+.button:hover {
+    border-radius: 32px;
+    transition: 0.2s;
+}
+.button:focus {
+    animation: shake 0.2s;
+    animation-iteration-count: initial;
+}
+.clearfix:after {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.heading {
+    background-color: rgba(0,0,0,0.35);
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.35);
+}
+.logo {
+    margin: 20px 0 0 8px;
+    padding: 0 0 8px 0;
+    float: left;
+}
+.logo:hover {
+    border-radius: 5px;
+    background: rgba(85, 139, 47, 0.5);
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+.menu li {
+    float: left;
+    /*display: block;*/
+    padding: 0 0 36px 0;
+}
+.menu li:hover {
+    background: rgba(85, 139, 47, 0.5);
+}
+.menu li a {
+    color: #eeeeee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+.parallax {
+    /* The image used */
+    background-image: url('/img/coffee-bg2.jpg');
+
+    /* Full height */
+    height: 550px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services {
+    margin-top: 40px;
+}
+.services_item {
+    color: #263238;
+    box-shadow: 2px 4px 11px 2px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-top: 18px;
+    padding-top: 8px;
+    width: 470px;
+    /*height: 466px;*/
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+.services_item:hover {
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.33);
+    transition: 0.3s;
+}
+.services_item h3 {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.services_item img {
+    border-radius: 50%;
+    box-shadow: 4px 8px 8px 0 rgba(0,0,0,0.33);
+    -webkit-transition-timing-function: ease;
+    transition: transform 0.4s;
+}
+.services_item:hover img {
+    opacity: 0.9;
+    box-shadow: 4px 8px 11px 0 rgba(0,0,0,0.33);
+    transition: 0.4s;
+    transform: scale3d(1.08, 1.08, 1.08);
+}
+.services_item:nth-child(2) {
+    float: right;
+}
+.services_item:nth-child(3) {
+    float: left;
+}
+.services_item:last-child {
+    float: right;
+}
+.title-main {
+    font-size: 40px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+}
+.title {
+    padding-top: 64px;
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.works {
+    margin-top: 7px;
+}
+.works img {
+    float: left;
+}
+.works img:last-child {
+    float: right;
+}
+.works img:nth-child(2) {
+    margin-left: 5px;
+}

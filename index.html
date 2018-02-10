@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Coffee Trans.inc</title>
+    <link rel="shortcut icon" href="/img/ico/xfavicon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="/css/classes.css">
+    <link rel="stylesheet" href="/css/id.css">
+    <link rel="stylesheet" href="/css/ss.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+<header>
+    <div class="heading clearfix">
+        <div class="container">
+            <a href="/main.html">
+                <img src="/img/coffee-logo.png" alt="logo" class="logo" width="32%" height="32%">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="/htmls/services.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="/htmls/info.html">Информация</a>
+                    </li>
+                    <li>
+                        <a href="/htmls/guarantees.html">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="/htmls/contacts.html">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="/htmls/about.html">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="titles">
+            <div class="title-main">
+                Welcome to Coffee Trans.inc!
+            </div>
+            <h1>
+                It's nice to meet you
+            </h1>
+        </div>
+        <a class="button" href="#">Хочешь кофе?:)</a>
+    </div>
+</header>
+<section id="services">
+    <div class="container">
+        <div class="title">
+            <h2>
+                Мы предлагаем
+            </h2>
+        </div>
+        <div class="services clearfix">
+            <a href="#" class="services_item">
+                <div>
+                    <img src="/img/plane.png" alt="RailTrans">
+                    <h3>
+                        Авиа перевозки
+                    </h3>
+                </div>
+            </a>
+            <a href="#" class="services_item">
+                <div>
+                    <img src="/img/rail.png" alt="RailTrans">
+                    <h3>
+                        Железнодорожные перевозки
+                    </h3>
+                </div>
+            </a>
+            <a href="#" class="services_item">
+                <div>
+                    <img src="/img/ship.png" alt="RailTrans">
+                    <h3>
+                        Контейнерные перевозки
+                    </h3>
+                </div>
+            </a>
+            <a href="#" class="services_item">
+                <div>
+                    <img src="/img/hands.png" alt="RailTrans">
+                    <h3>
+                        Экспедиторские услуги
+                    </h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="parallax">
+    <div class="container">
+        <div class="title">
+            <h2 id="parallax_header">
+                Наши преимущества
+            </h2>
+        </div>
+        <div class="advantages">
+            <div class="advantages_item">
+                <img src="/img/time.png" alt="time" width="210" height="210">
+                <h4>
+                    Без выходных 24/7
+                </h4>
+            </div>
+            <div class="advantages_item">
+                <img src="/img/fast.png" alt="rocket" width="210" height="210">
+                <h4>
+                    Быстро
+                </h4>
+            </div>
+            <div class="advantages_item">
+                <img src="/img/fragile.png" alt="fragile" width="210" height="210">
+                <h4>
+                    Бережно
+                </h4>
+            </div>
+            <div class="advantages_item">
+                <img src="/img/reliably.png" alt="time" width="210" height="210">
+                <h4>
+                    Надежно
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <div class="title">
+            <h2>
+                Галерея
+            </h2>
+        </div>
+        <div class="works clearfix">
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="/img/xx.jpg" alt="Cat" width="36%" height="36%">
+            <img id="imgmy" src="/img/xx.jpg" alt="Cat" width="36%" height="36%">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+</section>
+<footer id="parallax2">
+    <div class="container">
+        <div class="summary">
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>

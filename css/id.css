@@ -1,6 +1,18 @@
 #services {
     padding-bottom: 120px;
 }
+#header {
+    /* The image used */
+    background: url("/img/coffee-bg.jpg") no-repeat center top / cover;
+    padding-bottom: 160px;
+
+    /* Set a specific height */
+    min-height: 160px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+}
 #portfolio {
     background: #eaeaea;
     padding-bottom: 320px;

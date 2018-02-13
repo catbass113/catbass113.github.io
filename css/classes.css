@@ -122,7 +122,7 @@
     transition-duration: 0.5s;
 }
 .logo_container:hover .sub-logo_leaf {
-    margin: -10px 0 0 -8px;
+    margin-left: -8px;
     -webkit-transform: translate(207px, 0);
     -ms-transform: translate(207px, 0);
     transform: translate(207px, 0);
@@ -169,11 +169,12 @@
 .sub-logo_leaf {
     width: 40px;
     height: 64px;
-    margin: -10px 0 0 -8px;
+    margin-left: -8px;
+    top: 4px;
+    position: absolute;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    position: absolute;
 }
 .menu {
     list-style-type: none;

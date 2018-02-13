@@ -57,6 +57,18 @@
        -moz-animation-duration: 0.5s;
             animation-duration: 0.5s;
 }
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    10% { -webkit-transform: rotate(368deg); transform: rotate(368deg); }
+    18% { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+}
+@keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    10% { -webkit-transform: rotate(368deg); transform: rotate(368deg); }
+    18% { -webkit-transform: rotate(359deg); transform: rotate(359deg); }
+    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+}
 @-webkit-keyframes animate_store_item-inf {
     0%   {background-color:rgba(85, 139, 47, 0.0); -webkit-transform: translateY(-128px); transform: translateY(-128px);}
     100% {background-color:rgba(85, 139, 47, 1); -webkit-transform: translateY(0px); transform: translateY(0px);}

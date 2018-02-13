@@ -1,7 +1,11 @@
 /* Style the Image Used to Trigger the Modal */
 #myImg {
-    border-radius: 5px;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -46,13 +50,27 @@
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.4s;
+    -webkit-animation-name: zoom;
+       -moz-animation-name: zoom;
+            animation-name: zoom;
+    -webkit-animation-duration: 0.4s;
+       -moz-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
+}
+
+@-moz-keyframes zoom {
+    from {-moz-transform:scale(0);transform:scale(0)}
+    to {-moz-transform:scale(1);transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
 }
 
 /* The Close Button */
@@ -63,6 +81,9 @@
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
     transition: 0.3s;
 }
 

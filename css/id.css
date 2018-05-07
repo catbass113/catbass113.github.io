@@ -2,14 +2,11 @@
     padding-bottom: 120px;
 }
 #header {
-    /* The image used */
-    background: url("/img/coffee-bg.jpg") no-repeat center top / cover;
-    padding-bottom: 160px;
+    background: url("/img/bg.jpg") no-repeat center top / cover;
+    padding-bottom: 120px;
 
-    /* Set a specific height */
-    min-height: 160px;
+    min-height: 120px;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
 }
@@ -19,34 +16,21 @@
 
 }
 #parallax {
-    /* The image used */
-    background-image: url('/img/coffee-bg2.jpg');
+    background-image: url('/img/bg.jpg');
 
-    /* Full height */
     height: 640px;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#parallax2 {
-    /* The image used */
-    background: url("/img/coffee-bg.jpg") no-repeat center top / cover;
-    padding-bottom: 160px;
-
-    /* Set a specific height */
-    min-height: 440px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-}
 #parallax_header {
     font-size: 40px;
-    color: #eeeeee;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+}
+#title_rest {
+    margin-top: 56px;
 }

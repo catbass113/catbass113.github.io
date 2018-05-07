@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Перевозка | V&M Logistics</title>
+    <link rel="shortcut icon" href="/img/ico/xfavicon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="/css/classes.css">
+    <link rel="stylesheet" href="/css/id.css">
+    <link rel="stylesheet" href="/css/ss.css">
+    <!--<link rel="stylesheet" href="css/lightbox.css">-->
+    <link rel="stylesheet" href="/css/anim.css">
+</head>
+<body>
+<header id="header">
+    <div class="main-menu clearfix">
+        <div class="container">
+            <a href="/">
+                <div class="logofix"></div>
+                <div class="logo_container">
+                    <img src="/img/nLogo.png" alt="logo" class="logo">
+                </div>
+            </a>
+            <ul class="menu">
+                <li><a href="/about.html">О нас</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+                <li><a href="/coop.html">Сотрудничество</a></li>
+                <li><a href="/fees.html">Тарифы</a></li>
+                <li><a href="/cars.html">Автопарк</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="titles">
+            <div class="title-main animate_title-main" id="title_rest">
+                Перевозка
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2>Заявка на перевозку</h2>
+        <table border="0">
+            <tr>
+                <td>Пункт отправления - <br>Откуда везем груз? (*)</td>
+                <td><input type="text" value="" size="50" name="form[otpr]"/></td>
+                <td>Пример: Киев, ул. Бориспольская 9 </td>
+            </tr>
+            <tr>
+                <td>Пункт назначения - <br>Куда везем груз? (*)</td>
+                <td><input type="text" value="" size="50" name="form[nazn]"/></td>
+                <td>Пример: Днепропетровск , просп.Карла Маркса , д. 38</td>
+            </tr>
+            <tr>
+                <td>Характер груза  - <br>Что везем? (*)</td>
+                <td><input type="text" value="" size="50" name="form[harak]"/></td>
+                <td>Пример: бытовая техника </td>
+            </tr>
+            <tr>
+                <td>Характеристики груза  - <br>Габариты (Д*Ш*В) или объем, вес (тоннаж)</td>
+                <td><input type="text" value="" size="50" name="form[gabar]"/></td>
+                <td>Пример: 5м*2м*1,5м, 1,1 тонны </td>
+            </tr>
+            <tr>
+                <td>Грузоотправитель - <br> Наименование организации или Ф.И.О грузоотправителя</td>
+                <td><input type="text" value="" size="50" name="form[organiz]"/></span></td>
+                <td>Пример:  ООО "Вест Плюс Сервис"</td>
+            </tr>
+            <tr>
+                <td>Контактное лицо - <br>К кому обратиться? (*)</td>
+                <td><input type="text" value="" size="50" name="form[name]"/></td>
+                <td>Пример: Петров Петр Петрович </td>
+            </tr>
+            <tr>
+                <td>Контактный телефон - <br>Желательно указать 2 телефона (*)</td>
+                <td><input type="text" value="" size="50" name="form[tel]"/></span></td>
+                <td>Пример: +38 (095) 715-81-25, +38 (044) 599-35-98</td>
+            </tr>
+            <tr>
+                <td>Контактный e-mail  (*)</td>
+                <td><input type="text" value="" size="50" name="form[Email]"/></span></td>
+                <td>Пример: bla-bla-bla@mail.com
+                    </td>
+            </tr>
+            <tr>
+                <td>Дополнительная информация - <br>Комментарии, пожелания,когда необходима перевозка?</td>
+                <td><textarea cols="38" rows="5" name="form[text]"></textarea></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Защита от роботов</td>
+                <td><img src="http://kiev-trans.com.ua/index.php?option=com_rsform&amp;task=captcha&amp;componentId=21"alt="Защита от роботов"/>
+                    <input type="text" name="form[captcha]" value="" style="text-align:center;width:75px;" />
+                    <a href="" onclick="refreshCaptcha(21,'http://kiev-trans.com.ua/index.php?option=com_rsform&amp;task=captcha&amp;componentId=21');return false;">Обновить</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Отправить" name ="form[Submit]" id="Submit" /><div class="clr"/><span id="component8" class="formNoError"></span></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="hidden" name="form[formId]" value="1"/>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+</section>
+<footer>
+    <div class="container">
+        <div class="footer_container">
+            <h5>
+                © 2018 S. Grinchenko
+            </h5>
+            <div class="socials">
+                <h6>
+                    Мы в соц. сетях:
+                </h6>
+                <div class="socials-img_item">
+                    <img src="/img/socials/f.png" alt="facebook">
+                </div>
+                <div class="socials-img_item">
+                    <img src="/img/socials/t.png" alt="tweeter">
+                </div>
+                <div class="socials-img_item">
+                    <img src="/img/socials/vk.png" alt="vk">
+                </div>
+                <div class="socials-img_item">
+                    <img src="/img/socials/g+.png" alt="g+">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
